@@ -1,6 +1,6 @@
 
 header{
-  outline: 1px solid purple;
+ 
   display: flex;
   justify-content: flex-end;
   
@@ -89,7 +89,7 @@ main{
 main #main-img{
   /* outline: 1px solid green; */
   text-align: center;
-  margin-top: 3px;
+  margin-top: 15px;
   /* background-color: navy; */
   position: relative;
   left: 50%;
@@ -111,24 +111,24 @@ main #main-img{
 
   display: flex;
   align-items: center;
-  margin-top: 31px;
+  margin-top: 23px;
 }
 
 input[type="text"]{
   /* border: 1px solid red; */
   border: none;
-  width: 80%;
+  width: 78%;
   margin-left: 0px;
   
 }
 
 input[type="text"]:focus{
-  border:3px solid yellow;
-  border: none;
+  
+  outline: none;
 }
 
 #search-bar-div .material-symbols-outlined{
-  margin-left: 2%;
+  margin-left: 3%;
   color: #9aa0a6;
   width: 30px;
   
@@ -137,10 +137,128 @@ input[type="text"]:focus{
 #search-bar-div img{
   width: 24px;
   margin-right: 8px;
+
 }
 
 #search-bar-div:hover{
   box-shadow: 1px 1px 10px 0px #9aa0a6;
-  border: none;
+  border: 0px;
 }
 
+
+.btn-search,.btn-lucky{ 
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  color: #3c4043;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+
+
+
+}
+
+.btn-search:hover,
+.btn-lucky:hover{
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  background-color: #f8f9fa;
+  border:1px solid #dadce0;
+  color: #202124;
+}
+
+#main-buttons{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+
+ position: relative;
+ margin-top: 20px;
+ font-size: 14px;
+ 
+}
+
+.last-para{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #4d5156;
+  height: 220px;
+}
+
+.last-para a{
+  text-decoration: none;
+  color: #1a0dab;
+  padding-right: 8px;
+  
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+footer{
+
+background-color: #70757a1c;
+  
+}
+
+
+footer div p{
+ 
+  color: #70757a;
+  margin-left: 15px;
+  font-size: 15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+ font-size: 15px;
+ font-family: sans-serif;
+
+  
+
+}
+
+#links-other-pages{
+
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20px;
+
+}
+
+nav{
+
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+
+
+  & li{
+    
+    list-style-type: none;
+    padding: 15px;
+  }
+ 
+& li a{
+  color: #70757a;
+  font-size: 14px;
+  font-family: sans-serif;
+
+}
+  & li a:link{
+    text-decoration: none;
+   
+    
+  }
+  
+}
+
+nav li a:hover{
+  text-decoration: underline;
+}
