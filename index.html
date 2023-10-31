@@ -29,8 +29,8 @@
   <body>
     <header>
       <span id="header-div">
-        <span><a href="#">Gmail</a></span>
-        <span><a href="#">Images</a></span>
+        <span><a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ifkv=AVQVeywicRRZO_1BAaUyARN8NyseCLvXFdiPqdB86E8R4jdczAWWE6bc388mGW__zMUxuIgbHaPFDQ&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1106412435%3A1698546167471011&theme=glif">Gmail</a></span>
+        <span><a href="https://www.google.lk/imghp?hl=en&ogbl">Images</a></span>
         <span
           title="Google apps"
           style="padding: 5px"
@@ -56,17 +56,24 @@
       <div>
         <div id="search-bar-div">
           <span class="material-symbols-outlined"> search </span>
-          <input type="text" />
+          
+          <form action="https://www.google.lk/search">
+        
+          <input name="q" type="text" />
 
           <img title="Search by voice" src="img/mic-icon.svg" alt="mic" />
           <img title="Search by image" src="img/camera-icon.svg" alt="camera" />
+       
         </div>
 
         <div id="main-buttons">
-          <button class="btn-search">Google Search</button>
+          <button type="submit" class="btn-search">Google Search</button>
           <button class="btn-lucky">I'm Feeling Lucky</button>
         </div>
+      </form>
+     
       </div>
+      
 
       <div class="last-para">
         <p>
@@ -83,19 +90,20 @@
 
         <div id="links-other-pages">
           <nav>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Advertising</a></li>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">How Search works</a></li>
+            <li><a href="https://about.google/?utm_source=google-LK&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+            <li><a href="https://ads.google.com/intl/en_lk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+            <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+            <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a></li>
           </nav>
 
           <nav>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
+            <li><a href="https://policies.google.com/privacy?hl=en-LK&fg=1">Privacy</a></li>
+            <li><a href="https://policies.google.com/terms?hl=en-LK&fg=1">Terms</a></li>
             <li><a href="#">Settings</a></li>
           </nav>
         </div>
       </div>
+      <p class="para">All product logos, designs, and trademarks, with the exception of the code, are copyrighted and belong to their respective owners</p>
     </footer>
   </body>
 </html>

@@ -101,7 +101,7 @@ main #main-img {
 #search-bar-div {
   height: 50px;
   border-radius: 25px;
-  width: 55%;
+  width: 50%;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -111,12 +111,14 @@ main #main-img {
   display: flex;
   align-items: center;
   margin-top: 23px;
+  flex-wrap: nowrap;
 }
 
 input[type="text"] {
+  position: relative;
+
   border: none;
   width: 78%;
-  margin-left: 0px;
 }
 
 input[type="text"]:focus {
@@ -132,6 +134,9 @@ input[type="text"]:focus {
 #search-bar-div img {
   width: 24px;
   margin-right: 8px;
+}
+img[title="Search by voice"] {
+  margin-left: 20%;
 }
 
 #search-bar-div:hover {
@@ -178,21 +183,29 @@ input[type="text"]:focus {
   margin-top: 15px;
   font-size: 13px;
   color: #4d5156;
-  height: 220px;
+  /* height: 190px; */
 }
 
 .last-para a {
   text-decoration: none;
   color: #1a0dab;
-  padding-right: 8px;
 
   &:hover {
     text-decoration: underline;
   }
 }
 
+form {
+  width: 90%;
+  display: flex;
+}
+
 footer {
+  position: relative;
   background-color: #70757a1c;
+ 
+ margin-top: 14%;
+ 
 }
 
 footer div p {
@@ -204,6 +217,9 @@ footer div p {
   transform: translateY(50%);
   font-size: 15px;
   font-family: sans-serif;
+  /* padding-bottom: 5px; */
+ 
+  
 }
 
 #links-other-pages {
@@ -219,7 +235,7 @@ nav {
 
   & li {
     list-style-type: none;
-    padding: 15px;
+    padding: 0 10px;
   }
 
   & li a {
@@ -234,4 +250,18 @@ nav {
 
 nav li a:hover {
   text-decoration: underline;
+}
+
+
+.para{
+  position: absolute;
+  /* margin-top: 10px; */
+  font-size: 7px;
+  opacity: 0.5;
+  color: red;
+  text-align: right;
+  left: 5%;
+  display: flex;
+   
+  
 }
