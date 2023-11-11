@@ -22,6 +22,7 @@ header {
 
   width: 100%;
   position: relative;
+ 
 }
 
 #header-div {
@@ -203,13 +204,13 @@ form {
 footer {
   position: relative;
   background-color: #70757a1c;
- 
- margin-top: 14%;
+  
+ margin-top: 26vh;
  
 }
 
 footer div p {
-  color: #70757a;
+  color: #202124;
   margin-left: 15px;
   font-size: 15px;
   position: relative;
@@ -239,7 +240,7 @@ nav {
   }
 
   & li a {
-    color: #70757a;
+    color: #202124;
     font-size: 14px;
     font-family: sans-serif;
   }
@@ -254,10 +255,11 @@ nav li a:hover {
 
 
 .para{
-  position: absolute;
-  /* margin-top: 10px; */
-  font-size: 7px;
-  opacity: 0.5;
+  position: fixed;
+  margin-top: -155px;
+  /* font-size: 7px; */
+  font-size: large;
+  opacity: 0.2;
   color: red;
   text-align: right;
   left: 5%;
@@ -265,3 +267,4 @@ nav li a:hover {
    
   
 }
+
